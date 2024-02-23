@@ -1,4 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication, QLabel
+from PyQt5.QtGui import QPixmap
 from PyQt5 import uic
 import sys
 from datetime import datetime, timedelta
@@ -37,6 +38,19 @@ class Main(QMainWindow):
         self.day.setText(self.date.strftime("%d"))
         self.hour.setText(self.date.strftime("%H"))
         self.minute.setText(self.date.strftime("%M"))
+
+        """Weather Situation"""
+        self.sunny_day = QPixmap("images/Sun.png")
+        self.night = QPixmap("images/Sun.png")
+        self.evening = QPixmap("images/evening.jpg")
+
+        """Day Or Night"""
+        if 5 <= int(self.date.strftime("%H")) <= 16:
+            self.pic.setPixmap(self.sunny_day)
+        elif 17 <= int(self.date.strftime("%H")) <= 19:
+            self.pic.setPixmap(self.evening)
+        else:
+            self.pic.setPixmap(self.night)
 
         """Showing the Window """
         self.show()
