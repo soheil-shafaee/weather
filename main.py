@@ -3,6 +3,12 @@ from PyQt5.QtGui import QPixmap
 from PyQt5 import uic
 import sys
 from datetime import datetime, timedelta
+import requests
+
+
+"""Secret key"""
+API_KEY = "b922f55b4465c11b31b2101ab35f4243"
+CITY = 'sari'
 
 
 class Main(QMainWindow):
@@ -41,7 +47,7 @@ class Main(QMainWindow):
 
         """Weather Situation"""
         self.sunny_day = QPixmap("images/Sun.png")
-        self.night = QPixmap("images/Sun.png")
+        self.night = QPixmap("images/Blood.png")
         self.evening = QPixmap("images/evening.jpg")
 
         """Day Or Night"""
@@ -51,6 +57,16 @@ class Main(QMainWindow):
             self.pic.setPixmap(self.evening)
         else:
             self.pic.setPixmap(self.night)
+
+        """Using API for weather"""
+        self.response = requests.get(f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units"
+                                     f"=metric")
+        self.weather_situation = self.response.json()["weather"][0]["main"]
+        self.temp_today_cel = int(self.response.json()["main"]["temp"])
+
+        """Set our weather situation"""
+        self.temp_today.setText(str(self.temp_today_cel))
+        self.situation.setText(self.weather_situation)
 
         """Showing the Window """
         self.show()
