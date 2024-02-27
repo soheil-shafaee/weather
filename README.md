@@ -33,10 +33,10 @@ https://github.com/soheil-shafaee/weather/assets/111058416/e94f83d0-47b0-4b66-b3
 
 
 ## Configuration
-Before running the application, you need to obtain an API key from OpenWeatherMap:
-Sign up for a free account on OpenWeatherMap.
-Once logged in, navigate to the API keys section to generate an API key.
-Copy the API key and replace your_api_key_here in the main.py file with your actual API key.
+Before running the application, you need to obtain an API key from <a href="https://openweathermap.org/api">OpenWeatherMap</a>:
+1. Sign up for a free account on OpenWeatherMap.
+2. Once logged in, navigate to the API keys section to generate an API key.
+3. Copy the API key and replace your_api_key_here in the main.py file with your actual API key.
 
 ## Credits
 Weather icons by Flaticon.
