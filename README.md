@@ -25,8 +25,8 @@ The Weather App is a simple application built using PyQt5 and the <a href="https
 `cd weather_app`
 3. Run the application:
 `python first_page.py`
-3-1. Enter the name of the city you want to check the weather for in the input field.
-3-2. Click the "Search" button to fetch the weather information.
+1. Enter the name of the city you want to check the weather for in the input field.
+2. Click the "Search" button to fetch the weather information.
 
 ## Video of Usage
 https://github.com/soheil-shafaee/weather/assets/111058416/e94f83d0-47b0-4b66-b34c-9111bf97f934
