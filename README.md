@@ -39,5 +39,5 @@ Before running the application, you need to obtain an API key from <a href="http
 3. Copy the API key and replace your_api_key_here in the main.py file with your actual API key.
 
 ## Credits
-Weather icons by <a href="https://www.flaticon.com/">Flaticon</a>.
-OpenWeatherMap API for providing weather data.
+- Weather icons by <a href="https://www.flaticon.com/">Flaticon</a>.
+- <a href="https://openweathermap.org/api">OpenWeatherMap API</a>  for providing weather data.
