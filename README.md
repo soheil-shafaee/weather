@@ -2,7 +2,7 @@
 
 ## Description
 
-The Weather App is a simple application built using PyQt5 and the OpenWeatherMap API to display weather information for a specified city.
+The Weather App is a simple application built using PyQt5 and the <a href="https://openweathermap.org/api">OpenWeatherMap API</a> to display weather information for a specified city.
 
 ## Features
 
