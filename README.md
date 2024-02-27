@@ -19,14 +19,14 @@ The Weather App is a simple application built using PyQt5 and the OpenWeatherMap
 
 ## Usage
 
-Clone the repository to your local machine:
-`git clone https://github.com/your_username/weather_app.git`
-Navigate to the project directory:
+1. Clone the repository to your local machine:
+`git clone https://github.com/soheil-shafaee/weather.git`
+2. Navigate to the project directory:
 `cd weather_app`
-Run the application:
-`python main.py`
-Enter the name of the city you want to check the weather for in the input field.
-Click the "Search" button to fetch the weather information.
+3. Run the application:
+`python first_page.py`
+3-1. Enter the name of the city you want to check the weather for in the input field.
+3-2. Click the "Search" button to fetch the weather information.
 
 ## Video of Usage
 https://github.com/soheil-shafaee/weather/assets/111058416/e94f83d0-47b0-4b66-b34c-9111bf97f934
@@ -39,5 +39,5 @@ Before running the application, you need to obtain an API key from <a href="http
 3. Copy the API key and replace your_api_key_here in the main.py file with your actual API key.
 
 ## Credits
-Weather icons by Flaticon.
+Weather icons by <a href="https://www.flaticon.com/">Flaticon</a>.
 OpenWeatherMap API for providing weather data.
