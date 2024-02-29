@@ -53,6 +53,8 @@ class Main(QMainWindow):
         self.hour = self.findChild(QLabel, "hour")
         self.minute = self.findChild(QLabel, "minute")
         self.tomorrow = self.findChild(QLabel, "tomorrow")
+        self.weather_tomorrow = None
+        self.temperature_tomorrow = None
 
         # Write City Name
         self.city_title = self.city.title()
@@ -68,8 +70,6 @@ class Main(QMainWindow):
         self.sun = QPixmap("images/Sun.png")
         self.rain = QPixmap("images/rain.png")
         self.cloud = QPixmap("images/clouds.png")
-
-
 
         # -------------- Date and Time Section -----------
         """DateTime Use"""
@@ -92,8 +92,7 @@ class Main(QMainWindow):
             self.pic.setPixmap(self.evening)
         else:
             self.pic.setPixmap(self.night)
-            
-        
+
         # Fetch and display weather information
         self.fetch_weather()
 
